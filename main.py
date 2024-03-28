@@ -351,11 +351,11 @@ class MainWindow(MouseEvent):
             table.setCellWidget(RowCont, 0, checkbox)
 
             # 设置button
-            table.setCellWidget(RowCont, 6, self.createButton())
+            table.setCellWidget(RowCont, 7, self.createButton())
 
             d_list = [QTableWidgetItem(item.name), QTableWidgetItem(item.account),
                       QTableWidgetItem(item.password), QTableWidgetItem(item.remark),
-                      QTableWidgetItem(str(item.add_time).split('.')[0])]
+                      QTableWidgetItem(str(item.add_time).split('.')[0]), QTableWidgetItem(item.password_strength)]
             for it in range(len(d_list)):
                 table.setItem(RowCont, it + 1, d_list[it])
                 table.item(RowCont, it + 1).setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)

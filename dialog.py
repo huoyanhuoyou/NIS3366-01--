@@ -1,6 +1,6 @@
 """ Author: duckweed    Contact: valley-ov@qq.com  Time: 2022/11/2-16:41 """
 import random
-
+import re
 import pyperclip
 from PySide6 import QtCore
 from PySide6.QtGui import QGuiApplication, Qt
@@ -102,13 +102,86 @@ class InsertDialog(MouseDialog):
             return
         pwd = ret.get('data')
         key = ret.get('key')
+
+        password_strength = self.assess_password_strength(password)
+
         user_id = GlobalConfig.user.id
         PasswordMemoModel.create(user=user_id, name=name, account=account, password=pwd,
-                                 remark=remark, key=key)
+                                 remark=remark, key=key, password_strength=password_strength)
         logger.debug(f'{name} {account} {password} {remark}')
         QMessageBox.information(self, '添加成功', f'{name} 已经添加到数据库！')
         if self.parent:
             self.parent.search_items()
+
+    def assess_password_strength(self, password):
+        # 定义不同指标的权重
+        length_weight = 30
+        upper_case_weight = 20
+        lower_case_weight = 20
+        digit_weight = 20
+        special_char_weight = 30
+
+        # 定义扣分规则
+        two_repeat_penalty = 15
+        three_consecutive_penalty = 20
+
+        # 初始化分数
+        score = 0
+
+        # 检查密码长度
+        if len(password) >= 12:
+            score += length_weight
+        elif len(password) >= 8:
+            score += 2/3*length_weight
+
+        # 检查是否包含大写字母
+        if re.search(r'[A-Z]', password):
+            score += upper_case_weight
+
+        # 检查是否包含小写字母
+        if re.search(r'[a-z]', password):
+            score += lower_case_weight
+
+        # 检查是否包含数字
+        if re.search(r'[0-9]', password):
+            score += digit_weight
+
+        # 检查是否包含特殊字符
+        if re.search(r'[!@#$%^&*(),.?":{}|<>~/\\！￥……。，、‘；`·]', password):
+            score += special_char_weight
+
+        # 检查两个连续字符的重复并扣分
+        for i in range(len(password) - 2):
+            if password[i] == password[i + 1] and password[i + 1] == password[i + 2]:
+                score -= two_repeat_penalty
+
+        # 检查三个字符连续并扣分
+            # 检查数字连续性
+            if password[i].isdigit() and password[i + 1].isdigit() and password[i + 2].isdigit() and \
+                    int(password[i]) + 1 == int(password[i + 1]) and int(password[i + 1]) + 1 == int(password[i + 2]):
+                score -= three_consecutive_penalty
+
+            if password[i].isdigit() and password[i + 1].isdigit() and password[i + 2].isdigit() and \
+                    int(password[i]) - 1 == int(password[i + 1]) and int(password[i + 1]) - 1 == int(password[i + 2]):
+                score -= 2/3*three_consecutive_penalty
+            # 检查字母连续性，注意大小写
+            if password[i].isalpha() and password[i + 1].isalpha() and password[i + 2].isalpha() and \
+                    ord(password[i]) + 1 == ord(password[i + 1]) and ord(password[i + 1]) + 1 == ord(password[i + 2]):
+                score -= three_consecutive_penalty
+
+            if password[i].isalpha() and password[i + 1].isalpha() and password[i + 2].isalpha() and \
+                    ord(password[i]) - 1 == ord(password[i + 1]) and ord(password[i + 1]) - 1 == ord(password[i + 2]):
+                score -= 2/3*three_consecutive_penalty
+
+        # 根据分数给出密码强度等级
+        if score <= 50:
+            password_strength = "low"
+        elif score <= 90:
+            password_strength = "mid"
+        else:
+            password_strength = "high"
+
+        return password_strength
 
 
 class ConfirmDialog(MouseDialog):
