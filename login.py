@@ -15,6 +15,10 @@ from utils.password import create_pwd
 from utils.file import readQss
 
 
+from get_train_data import FaceDataCollector
+from train import FaceRecognize_trainer
+from recognize import FaceRecognizer
+
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("myappid")
 
 
@@ -94,13 +98,17 @@ class LoginWindow(MouseEvent):
             if er_type == 'account':
                 logger.warning('用户名不存在')
                 self.ui.login_error.setText('用户名不存在')
-            else:
+            elif er_type == 'password':
                 logger.warning('密码错误！')
                 self.ui.login_error.setText('密码错误！')
+            elif er_type == 'face_recognition':
+                logger.warning('人脸识别失败！')
+                self.ui.login_error.setText('人脸识别失败！')
+            else:
+                logger.warning('登录失败！')
             self.ui.login_account.setFocus()
             self.ui.login_btn.setEnabled(True)
             self.ProgressBar.emit(0)
-            logger.warning('登录失败！')
             self.set_status.emit('登录失败')
 
         if not select_.count():
@@ -110,6 +118,14 @@ class LoginWindow(MouseEvent):
         if User.password != pwd:
             error(er_type='password')
             return
+
+        # 密码验证通过，执行人脸识别
+        face_recognizer = FaceRecognizer()
+        if not face_recognizer.recognize_faces(account):
+            error(er_type='face_recognition')
+            return
+
+        # 人脸识别通过，完成登录
         self.ui.login_btn.setEnabled(True)
         self.ProgressBar.emit(100)
         self.set_status.emit('登录成功')
@@ -127,6 +143,8 @@ class LoginWindow(MouseEvent):
             self.ProgressBar.emit(0)
             self.set_status.emit('')
         logger.info('登录成功')
+
+
 
     @staticmethod
     def clearLogin():
@@ -171,6 +189,16 @@ class LoginWindow(MouseEvent):
         QMessageBox.information(self, '注册成功', '账号注册成功，密码无法修改，请务必妥善保管！')
         self.ui.tabWidget.setCurrentIndex(0)  # 设置页面显示登录
         self.ui.error_text.setText('')
+        print(f"Collecting training data for {username}...")
+        face_data_collector = FaceDataCollector()
+        # user_id = input('\n 输入用户id并回车 ==> ')
+        face_data_collector.collect_face_data(username)
+
+        print("Training model...")
+        face_recognize_trainer = FaceRecognize_trainer("train data")
+        face_recognize_trainer.train()
+        # 模型训练逻辑
+
 
     @staticmethod
     def set_shadow(frame):

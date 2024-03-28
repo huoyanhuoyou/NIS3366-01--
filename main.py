@@ -2,7 +2,7 @@
 import ctypes
 import time
 import os
-
+import cv2
 from PySide6.QtCore import QSize, Signal, Qt, QTimer
 from PySide6.QtGui import QIcon, QPixmap
 from PySide6.QtWidgets import QApplication, QSizeGrip, QHeaderView, QAbstractItemView, QTableWidgetItem, \

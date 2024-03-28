@@ -48,7 +48,7 @@ class initData:
         self.initDir()
         self.initFile()
         logger.info(GlobalConfig.config.level)
-        logger.info('作者: ' + GlobalConfig.config.author)
+        logger.info('鸣谢: ' + GlobalConfig.config.author)
         logger.info('当前版本: ' + GlobalConfig.config.version)
         logger.info('python: ' + GlobalConfig.config.python_version)
         self.initKey()
