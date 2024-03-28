@@ -307,8 +307,8 @@ class Ui_manage(object):
         self.verticalLayout_4.addLayout(self.horizontalLayout_11)
 
         self.tableWidget = QTableWidget(self.manage_page)
-        if (self.tableWidget.columnCount() < 7):
-            self.tableWidget.setColumnCount(7)
+        if (self.tableWidget.columnCount() < 8):
+            self.tableWidget.setColumnCount(8)
         __qtablewidgetitem = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
@@ -323,6 +323,8 @@ class Ui_manage(object):
         self.tableWidget.setHorizontalHeaderItem(5, __qtablewidgetitem5)
         __qtablewidgetitem6 = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(6, __qtablewidgetitem6)
+        __qtablewidgetitem7 = QTableWidgetItem()
+        self.tableWidget.setHorizontalHeaderItem(7, __qtablewidgetitem7)
         self.tableWidget.setObjectName(u"tableWidget")
         self.tableWidget.setMinimumSize(QSize(700, 0))
         self.tableWidget.setFont(font7)
@@ -747,7 +749,9 @@ class Ui_manage(object):
         ___qtablewidgetitem5 = self.tableWidget.horizontalHeaderItem(5)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("manage", u"\u521b\u5efa\u65f6\u95f4", None));
         ___qtablewidgetitem6 = self.tableWidget.horizontalHeaderItem(6)
-        ___qtablewidgetitem6.setText(QCoreApplication.translate("manage", u"\u67e5\u770b\u5bc6\u7801", None));
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("manage", u"\u5bc6\u7801\u5f3a\u5ea6", None));
+        ___qtablewidgetitem7 = self.tableWidget.horizontalHeaderItem(7)
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("manage", u"\u67e5\u770b\u5bc6\u7801", None));
         self.groupBox.setTitle(QCoreApplication.translate("manage", u"\u914d\u7f6e\u6587\u4ef6", None))
         self.label_3.setText(QCoreApplication.translate("manage", u"\u6570\u636e\u5e93\u6587\u4ef6", None))
         self.db_label.setText(QCoreApplication.translate("manage", u"E:\\Python_code\\manage\\config\\path.json", None))

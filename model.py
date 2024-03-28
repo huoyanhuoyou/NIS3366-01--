@@ -102,7 +102,7 @@ class PasswordMemoModel(Database):
     key = peewee.TextField(verbose_name='密钥')
     remark = peewee.CharField(null=True, default='', max_length=256, verbose_name='备注')
     add_time = peewee.DateTimeField(default=datetime.now, verbose_name='创建时间')
-
+    password_strength = peewee.CharField(max_length=256, verbose_name='密码强度')
 
 base = Database()
 base.createTable()
