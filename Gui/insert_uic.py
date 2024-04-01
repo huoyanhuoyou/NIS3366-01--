@@ -114,8 +114,8 @@ class Ui_Insert(object):
 
         self.in_frame = QFrame(self.frame)
         self.in_frame.setObjectName(u"in_frame")
-        self.in_frame.setMinimumSize(QSize(310, 330))
-        self.in_frame.setMaximumSize(QSize(310, 330))
+        self.in_frame.setMinimumSize(QSize(310, 380))
+        self.in_frame.setMaximumSize(QSize(310, 380))
         self.in_frame.setStyleSheet(u"")
         self.in_frame.setFrameShape(QFrame.StyledPanel)
         self.in_frame.setFrameShadow(QFrame.Raised)
@@ -161,13 +161,12 @@ class Ui_Insert(object):
 
         self.random_password = QPushButton(self.in_frame)
         self.random_password.setObjectName(u"random_password")
-        self.random_password.setMinimumSize(QSize(90, 40))
-        self.random_password.setMaximumSize(QSize(90, 40))
+        self.random_password.setMinimumSize(QSize(70, 40))
+        self.random_password.setMaximumSize(QSize(70, 40))
         self.random_password.setFont(font1)
         self.random_password.setStyleSheet(u"")
 
         self.horizontalLayout.addWidget(self.random_password)
-
 
         self.verticalLayout_2.addLayout(self.horizontalLayout)
 
@@ -181,10 +180,20 @@ class Ui_Insert(object):
 
         self.verticalLayout_2.addWidget(self.remark)
 
+        self.copy_id = QPushButton(self.in_frame)
+        self.copy_id.setObjectName(u"copy_id")
+        self.copy_id.setText("复制密码")
+        self.copy_id.setMinimumSize(QSize(70, 40))
+        self.copy_id.setMaximumSize(QSize(70, 40))
+        self.copy_id.setFont(font1)
+        self.copy_id.setStyleSheet(u"")
+        self.verticalLayout_2.addWidget(self.copy_id)
+        self.horizontalLayout.addWidget(self.copy_id)
+
         self.range_num_min = QLineEdit(self.in_frame)
         self.range_num_min.setObjectName(u"range_num_min")
-        self.range_num_min.setMinimumSize(QSize(300, 40))
-        self.range_num_min.setMaximumSize(QSize(300, 40))
+        self.range_num_min.setMinimumSize(QSize(150, 40))
+        self.range_num_min.setMaximumSize(QSize(150, 40))
         self.range_num_min.setFont(font1)
         self.range_num_min.setStyleSheet(u"")
         self.range_num_min.setMaxLength(256)
@@ -193,8 +202,8 @@ class Ui_Insert(object):
 
         self.range_num_max = QLineEdit(self.in_frame)
         self.range_num_max.setObjectName(u"range_num_max")
-        self.range_num_max.setMinimumSize(QSize(300, 40))
-        self.range_num_max.setMaximumSize(QSize(300, 40))
+        self.range_num_max.setMinimumSize(QSize(150, 40))
+        self.range_num_max.setMaximumSize(QSize(150, 40))
         self.range_num_max.setFont(font1)
         self.range_num_max.setStyleSheet(u"")
         self.range_num_max.setMaxLength(256)
@@ -210,6 +219,16 @@ class Ui_Insert(object):
         self.must_str.setMaxLength(256)
         self.must_str.setPlaceholderText("请输入包含字符(非必填)")
         self.verticalLayout_2.addWidget(self.must_str)
+         
+        self.option_id = QLineEdit(self.in_frame)
+        self.option_id.setObjectName(u"option_id")
+        self.option_id.setMinimumSize(QSize(300, 40))
+        self.option_id.setMaximumSize(QSize(300, 40))
+        self.option_id.setFont(font1)
+        self.option_id.setStyleSheet(u"")
+        self.option_id.setMaxLength(256)
+        self.option_id.setPlaceholderText("请输入复制的id")
+        self.verticalLayout_2.addWidget(self.option_id)
 
         self.add_btn = QPushButton(self.in_frame)
         self.add_btn.setObjectName(u"add_btn")

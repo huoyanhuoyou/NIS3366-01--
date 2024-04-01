@@ -57,6 +57,8 @@ class MouseDialog(QDialog):
 class InsertDialog(MouseDialog):
 
     def __init__(self, parent=None):
+        self.checkbox_list = []  # 搜索列表中的多选按钮
+        self.selected_list = []  # 选择结果
         super(InsertDialog, self).__init__()
         self.parent = parent
         self.ui = Ui_Insert()
@@ -69,8 +71,30 @@ class InsertDialog(MouseDialog):
     def bind(self):
         # 生成随机密码
         self.ui.random_password.clicked.connect(self.create_password)
+        self.ui.copy_id.clicked.connect(self.copy_all)
         # 提交数据
         self.ui.add_btn.clicked.connect(self.addDate)
+
+    def copy_all(self):
+        option_id=self.ui.option_id.text()
+        password=PasswordMemoModel.select().where(PasswordMemoModel.id == int(option_id))
+
+        Pwd = password[0]
+        Password = Pwd.password
+        key = Pwd.key
+        enc = Encryption()
+        logger.debug(GlobalConfig.file_path.private_key)
+        ret = enc.textDecrypt(Password, private=GlobalConfig.file_path.private_key, key=key)
+        if ret.get('code') != 200:
+            logger.critical(f'数据加密失败 {ret.get("error")}')
+            self.parent.statusInfo.emit(f'数据加密失败 {ret.get("error")}')
+            return
+        pwd = ret.get('data')
+
+        self.ui.name.setText(password[0].name)
+        self.ui.account.setText(password[0].account)
+        self.ui.password.setText(pwd)
+        self.ui.remark.setText(password[0].remark)
 
     def create_password(self):
         chars = 'ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789~!@#$%^'
@@ -87,13 +111,6 @@ class InsertDialog(MouseDialog):
         self.ui.password.setText(pwd)
 
     def addDate(self):
-        self.checkbox_list = []  # 搜索列表中的多选按钮
-        self.selected_list = []  # 选择结果
-        if self.selected_list:
-            self.ui.name.setText(PasswordMemoModel.where(PasswordMemoModel.id == int(self.selected_list[0])).name)
-            self.ui.account.setText(PasswordMemoModel.where(PasswordMemoModel.id == int(self.selected_list[0])).account)
-            self.ui.password.setText(PasswordMemoModel.where(PasswordMemoModel.id == int(self.selected_list[0])).password)
-            self.ui.remark.setText(PasswordMemoModel.where(PasswordMemoModel.id == int(self.selected_list[0])).remark)
         name = self.ui.name.text()
         account = self.ui.account.text()
         password = self.ui.password.text()
@@ -118,7 +135,7 @@ class InsertDialog(MouseDialog):
         pwd = ret.get('data')
         key = ret.get('key')
         user_id = GlobalConfig.user.id
-        PasswordMemoModel.create(user=user_id, name=name, account=account, password=pwd,
+        PasswordMemoModel.create(user=user_id, name=name, account=account, password=pwd, 
                                  remark=remark, key=key)
         logger.debug(f'{name} {account} {password} {remark}')
         QMessageBox.information(self, '添加成功', f'{name} 已经添加到数据库！')
