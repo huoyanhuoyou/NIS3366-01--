@@ -103,6 +103,5 @@ class PasswordMemoModel(Database):
     remark = peewee.CharField(null=True, default='', max_length=256, verbose_name='备注')
     add_time = peewee.DateTimeField(default=datetime.now, verbose_name='创建时间')
 
-
 base = Database()
 base.createTable()

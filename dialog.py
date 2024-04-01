@@ -74,11 +74,26 @@ class InsertDialog(MouseDialog):
 
     def create_password(self):
         chars = 'ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789~!@#$%^'
-        pwd = ''.join(random.choice(chars) for _ in range(random.randint(6, 16)))
+        range_num_min=self.ui.range_num_min.text()
+        range_num_max=self.ui.range_num_max.text()
+        must_str=self.ui.must_str.text()
+        if range_num_min=="":
+            pwd = ''.join(random.choice(chars) for _ in range(random.randint(6-len(must_str), 16-len(must_str))))
+        else:
+            pwd = ''.join(random.choice(chars) for _ in range(random.randint(int(range_num_min)-len(must_str), int(range_num_max)-len(must_str))))
+        insert_index = random.randint(0, len(pwd))
+        pwd = pwd[:insert_index] + must_str + pwd[insert_index:]
         logger.debug(f'生成随机密码{pwd}')
         self.ui.password.setText(pwd)
 
     def addDate(self):
+        self.checkbox_list = []  # 搜索列表中的多选按钮
+        self.selected_list = []  # 选择结果
+        if self.selected_list:
+            self.ui.name.setText(PasswordMemoModel.where(PasswordMemoModel.id == int(self.selected_list[0])).name)
+            self.ui.account.setText(PasswordMemoModel.where(PasswordMemoModel.id == int(self.selected_list[0])).account)
+            self.ui.password.setText(PasswordMemoModel.where(PasswordMemoModel.id == int(self.selected_list[0])).password)
+            self.ui.remark.setText(PasswordMemoModel.where(PasswordMemoModel.id == int(self.selected_list[0])).remark)
         name = self.ui.name.text()
         account = self.ui.account.text()
         password = self.ui.password.text()

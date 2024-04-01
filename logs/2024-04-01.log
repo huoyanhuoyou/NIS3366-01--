@@ -1,0 +1,199 @@
+04-01 12:16:27.119887 [INFO] configInit.py:50 | INFO
+04-01 12:16:27.119887 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 12:16:27.119887 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 12:16:27.129887 [INFO] configInit.py:53 | python: 3.11.7
+04-01 12:16:27.744136 [INFO] configInit.py:55 | 文件初始化成功
+04-01 12:16:28.128652 [INFO] login.py:41 | 开始初始化窗口
+04-01 12:16:28.128652 [INFO] login.py:48 | 窗口初始化完成
+04-01 12:16:28.128652 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 12:16:34.040285 [INFO] login.py:86 | 开始登录
+04-01 12:16:34.050286 [WARNING] login.py:102 | 密码错误！
+04-01 12:16:34.270687 [INFO] login.py:86 | 开始登录
+04-01 12:16:34.280694 [WARNING] login.py:102 | 密码错误！
+04-01 12:16:39.161728 [INFO] login.py:86 | 开始登录
+04-01 12:16:39.161728 [WARNING] login.py:102 | 密码错误！
+04-01 12:16:51.929923 [INFO] login.py:188 | 注册成功
+04-01 12:17:06.547879 [INFO] login.py:86 | 开始登录
+04-01 12:49:28.990753 [INFO] configInit.py:50 | INFO
+04-01 12:49:28.990753 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 12:49:28.990753 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 12:49:28.990753 [INFO] configInit.py:53 | python: 3.11.7
+04-01 12:49:29.637644 [INFO] configInit.py:55 | 文件初始化成功
+04-01 12:49:29.864316 [INFO] login.py:41 | 开始初始化窗口
+04-01 12:49:29.864316 [INFO] login.py:48 | 窗口初始化完成
+04-01 12:49:29.874741 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 12:49:39.507231 [INFO] login.py:86 | 开始登录
+04-01 12:52:12.733337 [INFO] configInit.py:50 | INFO
+04-01 12:52:12.733337 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 12:52:12.733337 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 12:52:12.742346 [INFO] configInit.py:53 | python: 3.11.7
+04-01 12:52:13.990256 [INFO] configInit.py:55 | 文件初始化成功
+04-01 12:52:14.233039 [INFO] login.py:41 | 开始初始化窗口
+04-01 12:52:14.237555 [INFO] login.py:48 | 窗口初始化完成
+04-01 12:52:14.238828 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 12:52:21.602196 [INFO] login.py:86 | 开始登录
+04-01 12:52:21.602196 [INFO] login.py:132 | 登录成功
+04-01 12:52:21.611437 [INFO] login.py:134 | 下次自动登录
+04-01 12:52:21.612445 [CRITICAL] login.py:162 | 数据加密失败
+04-01 12:52:21.638955 [INFO] login.py:145 | 登录成功
+04-01 12:55:17.892012 [INFO] configInit.py:50 | INFO
+04-01 12:55:17.892012 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 12:55:17.892012 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 12:55:17.892012 [INFO] configInit.py:53 | python: 3.11.7
+04-01 12:55:18.808339 [INFO] configInit.py:55 | 文件初始化成功
+04-01 12:55:19.062390 [INFO] login.py:41 | 开始初始化窗口
+04-01 12:55:19.071400 [INFO] login.py:48 | 窗口初始化完成
+04-01 12:55:19.074792 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 12:55:26.943563 [INFO] login.py:86 | 开始登录
+04-01 12:55:26.943563 [INFO] login.py:132 | 登录成功
+04-01 12:55:26.952980 [INFO] login.py:134 | 下次自动登录
+04-01 12:55:26.953490 [CRITICAL] login.py:162 | 数据加密失败
+04-01 12:55:26.981023 [INFO] login.py:145 | 登录成功
+04-01 12:56:41.856242 [INFO] configInit.py:50 | INFO
+04-01 12:56:41.856242 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 12:56:41.856242 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 12:56:41.856242 [INFO] configInit.py:53 | python: 3.11.7
+04-01 12:56:42.795543 [INFO] configInit.py:55 | 文件初始化成功
+04-01 12:56:43.016872 [INFO] login.py:41 | 开始初始化窗口
+04-01 12:56:43.026881 [INFO] login.py:48 | 窗口初始化完成
+04-01 12:56:43.030271 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 12:56:49.119830 [INFO] login.py:86 | 开始登录
+04-01 12:56:49.125337 [INFO] login.py:132 | 登录成功
+04-01 12:56:49.130627 [INFO] login.py:134 | 下次自动登录
+04-01 12:56:49.130627 [CRITICAL] login.py:162 | 数据加密失败
+04-01 12:56:49.159052 [INFO] login.py:145 | 登录成功
+04-01 12:57:33.762948 [INFO] configInit.py:50 | INFO
+04-01 12:57:33.762948 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 12:57:33.762948 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 12:57:33.762948 [INFO] configInit.py:53 | python: 3.11.7
+04-01 12:57:34.914872 [INFO] configInit.py:55 | 文件初始化成功
+04-01 12:57:35.130322 [INFO] login.py:41 | 开始初始化窗口
+04-01 12:57:35.141041 [INFO] login.py:48 | 窗口初始化完成
+04-01 12:57:35.142250 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 12:57:43.676519 [INFO] login.py:86 | 开始登录
+04-01 12:57:43.686518 [INFO] login.py:132 | 登录成功
+04-01 12:57:43.692386 [INFO] login.py:134 | 下次自动登录
+04-01 12:57:43.693394 [CRITICAL] login.py:162 | 数据加密失败
+04-01 12:57:43.721752 [INFO] login.py:145 | 登录成功
+04-01 13:01:40.870628 [INFO] configInit.py:50 | INFO
+04-01 13:01:40.870628 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:01:40.870628 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:01:40.870628 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:01:41.347330 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:01:41.595286 [INFO] login.py:41 | 开始初始化窗口
+04-01 13:01:41.600759 [INFO] login.py:48 | 窗口初始化完成
+04-01 13:01:41.601770 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 13:01:48.571528 [INFO] login.py:86 | 开始登录
+04-01 13:01:48.571528 [INFO] login.py:132 | 登录成功
+04-01 13:01:48.579407 [INFO] login.py:134 | 下次自动登录
+04-01 13:01:48.579407 [CRITICAL] login.py:162 | 数据加密失败
+04-01 13:01:48.607648 [INFO] login.py:145 | 登录成功
+04-01 13:02:07.508810 [INFO] configInit.py:50 | INFO
+04-01 13:02:07.508810 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:02:07.508810 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:02:07.508810 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:02:08.256078 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:02:08.479710 [INFO] login.py:41 | 开始初始化窗口
+04-01 13:02:08.489712 [INFO] login.py:48 | 窗口初始化完成
+04-01 13:02:08.494787 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 13:02:18.145057 [INFO] login.py:86 | 开始登录
+04-01 13:02:18.145057 [INFO] login.py:132 | 登录成功
+04-01 13:02:18.154960 [INFO] login.py:134 | 下次自动登录
+04-01 13:02:18.155970 [CRITICAL] login.py:162 | 数据加密失败
+04-01 13:02:18.184541 [INFO] login.py:145 | 登录成功
+04-01 13:09:37.004563 [INFO] configInit.py:50 | INFO
+04-01 13:09:37.004563 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:09:37.004563 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:09:37.014561 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:09:37.538298 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:09:37.779163 [INFO] login.py:41 | 开始初始化窗口
+04-01 13:09:37.783490 [INFO] login.py:48 | 窗口初始化完成
+04-01 13:09:37.785407 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 13:09:45.529618 [INFO] login.py:86 | 开始登录
+04-01 13:09:45.539620 [INFO] login.py:132 | 登录成功
+04-01 13:09:45.543077 [INFO] login.py:134 | 下次自动登录
+04-01 13:09:45.543077 [CRITICAL] login.py:162 | 数据加密失败
+04-01 13:09:45.570813 [INFO] login.py:145 | 登录成功
+04-01 13:11:56.843099 [INFO] configInit.py:50 | INFO
+04-01 13:11:56.843099 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:11:56.843099 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:11:56.843099 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:11:57.319078 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:11:57.565769 [INFO] login.py:41 | 开始初始化窗口
+04-01 13:11:57.571921 [INFO] login.py:48 | 窗口初始化完成
+04-01 13:11:57.572921 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 13:12:05.860717 [INFO] login.py:86 | 开始登录
+04-01 13:12:05.860717 [INFO] login.py:132 | 登录成功
+04-01 13:12:05.867010 [INFO] login.py:134 | 下次自动登录
+04-01 13:12:05.868018 [CRITICAL] login.py:162 | 数据加密失败
+04-01 13:12:05.893113 [INFO] login.py:145 | 登录成功
+04-01 13:16:57.542365 [INFO] configInit.py:50 | INFO
+04-01 13:16:57.542365 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:16:57.542365 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:16:57.542365 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:16:58.625764 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:16:58.860983 [INFO] login.py:41 | 开始初始化窗口
+04-01 13:16:58.865984 [INFO] login.py:48 | 窗口初始化完成
+04-01 13:16:58.866984 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 13:17:06.836661 [INFO] login.py:86 | 开始登录
+04-01 13:17:06.846660 [INFO] login.py:132 | 登录成功
+04-01 13:17:06.850406 [INFO] login.py:134 | 下次自动登录
+04-01 13:17:06.851414 [CRITICAL] login.py:162 | 数据加密失败
+04-01 13:17:06.877263 [INFO] login.py:145 | 登录成功
+04-01 13:25:00.049290 [INFO] configInit.py:50 | INFO
+04-01 13:25:00.049290 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:25:00.049290 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:25:00.049290 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:25:01.560514 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:27:08.136839 [INFO] configInit.py:50 | INFO
+04-01 13:27:08.136839 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:27:08.136839 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:27:08.136839 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:27:09.471529 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:27:09.708710 [INFO] login.py:41 | 开始初始化窗口
+04-01 13:27:09.718710 [INFO] login.py:48 | 窗口初始化完成
+04-01 13:27:09.719223 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 13:27:17.357980 [INFO] login.py:86 | 开始登录
+04-01 13:27:17.367989 [INFO] login.py:132 | 登录成功
+04-01 13:27:17.370351 [INFO] login.py:134 | 下次自动登录
+04-01 13:27:17.370351 [CRITICAL] login.py:162 | 数据加密失败
+04-01 13:27:17.395917 [INFO] login.py:145 | 登录成功
+04-01 13:28:51.012355 [INFO] configInit.py:50 | INFO
+04-01 13:28:51.012355 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:28:51.012355 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:28:51.012355 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:28:51.814289 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:28:52.051478 [INFO] login.py:41 | 开始初始化窗口
+04-01 13:28:52.056476 [INFO] login.py:48 | 窗口初始化完成
+04-01 13:28:52.057477 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 13:28:59.529064 [INFO] login.py:86 | 开始登录
+04-01 13:28:59.539062 [INFO] login.py:132 | 登录成功
+04-01 13:28:59.540960 [INFO] login.py:134 | 下次自动登录
+04-01 13:28:59.541970 [CRITICAL] login.py:162 | 数据加密失败
+04-01 13:28:59.566673 [INFO] login.py:145 | 登录成功
+04-01 13:40:31.117595 [INFO] configInit.py:50 | INFO
+04-01 13:40:31.117595 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 13:40:31.117595 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 13:40:31.117595 [INFO] configInit.py:53 | python: 3.11.7
+04-01 13:40:32.488213 [INFO] configInit.py:55 | 文件初始化成功
+04-01 13:40:32.718876 [INFO] login.py:41 | 开始初始化窗口
+04-01 13:40:32.728877 [INFO] login.py:48 | 窗口初始化完成
+04-01 13:40:32.729466 [INFO] login.py:67 | 解密成功，自动填写密码
+04-01 13:40:41.728822 [INFO] login.py:86 | 开始登录
+04-01 13:40:41.728822 [INFO] login.py:132 | 登录成功
+04-01 13:40:41.735396 [INFO] login.py:134 | 下次自动登录
+04-01 13:40:41.736403 [CRITICAL] login.py:162 | 数据加密失败
+04-01 13:40:41.770107 [INFO] login.py:145 | 登录成功
+04-01 13:41:03.930468 [CRITICAL] dialog.py:109 | 数据加密失败
+04-01 13:41:10.896487 [CRITICAL] dialog.py:109 | 数据加密失败
+04-01 13:41:11.754156 [CRITICAL] dialog.py:109 | 数据加密失败
+04-01 13:41:11.994490 [CRITICAL] dialog.py:109 | 数据加密失败
+04-01 13:41:12.280887 [CRITICAL] dialog.py:109 | 数据加密失败
+04-01 15:04:23.259127 [INFO] configInit.py:50 | INFO
+04-01 15:04:23.259127 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-01 15:04:23.267128 [INFO] configInit.py:52 | 当前版本: 0.1.0
+04-01 15:04:23.267128 [INFO] configInit.py:53 | python: 3.11.7
+04-01 15:04:23.728937 [INFO] configInit.py:55 | 文件初始化成功
+04-01 15:04:24.010434 [INFO] login.py:41 | 开始初始化窗口
+04-01 15:04:24.014742 [INFO] login.py:48 | 窗口初始化完成
+04-01 15:04:24.014742 [INFO] login.py:67 | 解密成功，自动填写密码

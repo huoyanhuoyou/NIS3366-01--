@@ -98,3 +98,8 @@
 03-28 11:18:53.904105 [INFO] login.py:134 | 下次自动登录
 03-28 11:18:53.905105 [INFO] login.py:166 | 加密成功
 03-28 11:18:53.950321 [INFO] login.py:145 | 登录成功
+03-28 21:55:33.564400 [INFO] configInit.py:50 | INFO
+03-28 21:55:33.565395 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 21:55:33.566552 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 21:55:33.566552 [INFO] configInit.py:53 | python: 3.11.7
+03-28 21:55:35.657798 [INFO] configInit.py:55 | 文件初始化成功

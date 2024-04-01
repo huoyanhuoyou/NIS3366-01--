@@ -120,10 +120,10 @@ class LoginWindow(MouseEvent):
             return
 
         # 密码验证通过，执行人脸识别
-        face_recognizer = FaceRecognizer()
-        if not face_recognizer.recognize_faces(account):
-            error(er_type='face_recognition')
-            return
+        # face_recognizer = FaceRecognizer()
+        # if not face_recognizer.recognize_faces(account):
+        #     error(er_type='face_recognition')
+        #     return
 
         # 人脸识别通过，完成登录
         self.ui.login_btn.setEnabled(True)
