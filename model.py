@@ -99,6 +99,7 @@ class PasswordMemoModel(Database):
     name = peewee.CharField(max_length=256, verbose_name='名字')
     account = peewee.CharField(max_length=256, verbose_name='账号')
     password = peewee.CharField(max_length=256, verbose_name='密码')
+    url = peewee.CharField(max_length=256, verbose_name='网址')
     key = peewee.TextField(verbose_name='密钥')
     remark = peewee.CharField(null=True, default='', max_length=256, verbose_name='备注')
     add_time = peewee.DateTimeField(default=datetime.now, verbose_name='创建时间')
