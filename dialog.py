@@ -121,6 +121,10 @@ class InsertDialog(MouseDialog):
             self.ui.name.setFocus()
             QMessageBox.warning(self, '不能为空', '需要给个名字哦！！！')
             return
+        if len(url) < 2:
+            self.ui.url.setFocus()
+            QMessageBox.warning(self, '不能为空', '需要给个网址哦！！！')
+            return
         if len(account) < 2:
             self.ui.account.setFocus()
             QMessageBox.warning(self, '不能为空', '需要给填写个账号哦！！！')
@@ -140,9 +144,9 @@ class InsertDialog(MouseDialog):
         password_strength = self.assess_password_strength(password)
 
         user_id = GlobalConfig.user.id
-        PasswordMemoModel.create(user=user_id, name=name, account=account, password=pwd,
-                                 remark=remark, key=key, password_strength=password_strength)
-        logger.debug(f'{name} {account} {password} {remark}')
+        PasswordMemoModel.create(user=user_id, name=name, url=url,account=account, password=pwd,
+                                 remark=remark, key=key)
+        logger.debug(f'{name} {url} {account} {password} {remark}')
         QMessageBox.information(self, '添加成功', f'{name} 已经添加到数据库！')
         if self.parent:
             self.parent.search_items()
