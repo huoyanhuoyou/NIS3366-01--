@@ -551,7 +551,7 @@ class Ui_manage(object):
 
         self.textBrowser = QTextBrowser(self.scrollAreaWidgetContents_2)
         self.textBrowser.setObjectName(u"textBrowser")
-        self.textBrowser.setMinimumSize(QSize(0, 350))
+        self.textBrowser.setMinimumSize(QSize(0, 250))
         self.textBrowser.setFont(font6)
 
         self.verticalLayout_7.addWidget(self.textBrowser)
@@ -777,17 +777,13 @@ class Ui_manage(object):
 "hr { height: 1px; border-width: 0; }\n"
 "</style></head><body style=\" font-family:'\u5fae\u8f6f\u96c5\u9ed1'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">      \u5f88\u591a\u5c0f\u4f19\u4f34\u5e94\u8be5\u90fd\u6709\u88ab\u76d7\u53f7\u7684\u7ecf\u5386\u5427\u3002\u9996\u5148\u6709\u4e9b\u9ed1\u5ba2\u4e0d\u5f97\u4e0d\u8bf4\u786e\u5b9e\u975e\u5e38\u5389\u5bb3\uff0c\u8f7b\u8f7b\u677e\u677e\u5c31\u80fd\u628a\u4f60\u7684\u8d26\u53f7\u76d7\u8d70\u3002</p>\n"
-"<p style=\" margin-to"
-                        "p:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">      \u4f46\u662f\u4e5f\u5b58\u5728\u81ea\u5df1\u6162\u6162\u5b9e\u5728\u592a\u7b80\u5355\u4e86\uff0c\u8fd9\u79cd\u5bc6\u7801\u53eb\u505a\u5f31\u5bc6\u7801\uff0c\u5c31\u6bd4\u5982\u8bf4123456\u8fd9\u79cd\u5bc6\u7801\u3002</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">      \u600e\u4e48\u8bf4\u5462\uff0c\u8fd9\u79cd\u5bc6\u7801\u786e\u5b9e\u5f88\u5bb9\u6613\u8bb0\uff0c\u4e0d\u77e5\u9053\u60a8\u6e05\u4e0d\u6e05\u695a\u8fd9\u79cd\u5bc6\u7801\u5728\u5f88\u591a\u7206\u7834\u5b57\u5178\u4e2d\u90fd\u662f\u7b2c\u4e00\u4e2a\uff0c\u4e5f\u5c31\u610f\u5473\u7740\uff0c\u522b\u4eba\u53ea\u8981\u4e00\u5f0f\u5c31\u77e5\u9053\u4f60\u7684\u5bc6\u7801\u4e86\u3002</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">      <span style=\" color:#ff557f;\">\u4e5f\u5c31\u88ab\u76d7"
-                        "\u4e86\u3002</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">      \u600e\u4e48\u8bf4\u5462\uff0c\u8fd9\u79cd\u60c5\u51b5\u662f\u771f\u7684\u5b58\u5728\u7684\uff0c\u867d\u7136\u8fd9\u79cd\u7535\u8111\u8f6f\u4ef6\u53ef\u80fd\u6ca1\u90a3\u4e48\u5b9e\u7528\uff0c\u6bd5\u7adf\u66f4\u591a\u4eba\u7528\u7684\u90fd\u662f\u624b\u673a\uff0c\u4f46\u662f\u5427\uff01</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" color:#55ff00;\">      \u4ffa\u4e0d\u4f1a\u5f00\u53d1APP\uff0c\u6211\u4e0d\u662f\u7a0b\u5e8f\u5458\uff0c\u4ffa\u53ea\u4f1aPython\u3002</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">      \u5f53\u7136\u6709\u7684\u5c0f\u4f19\u4f34\u53ef\u80fd\u4f1a\u8bf4\u5f00\u53d1\u7f51\u7ad9\uff0c\u5c0f\u7a0b\u5e8f\u4ec0\u4e48\u7684\uff0c\u8fd9\u4e2a\u7684\u8bdd"
-                        "\u8fd8\u771f\u4e0d\u884c\uff0c\u867d\u7136\u6211\u53ef\u4ee5\u505a\uff0c\u4f46\u662f\u5c31\u7b97\u505a\u51fa\u6765\uff0c\u6211\u81ea\u5df1\u90fd\u4e0d\u4f1a\u5b58\u3002\u56e0\u4e3a\u8fd9\u4e9b\u90fd\u4f1a\u9700\u8981\u5728\u670d\u52a1\u5668\u4e2d\uff0c\u8fd9\u79cd\u8981\u662f\u8fd9\u4e2a\u670d\u52a1\u5668\u88ab\u9ed1\u5ba2\u653b\u51fb\u5462\uff01\u4e0d\u53ef\u63a7\u56e0\u7d20\u592a\u591a\u4e86\uff01</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">      \u6211\u4eec\u751f\u6d3b\u5728\u8fd9\u900f\u660e\u7684\u4e16\u754c\u4e0a\uff0c\u867d\u7136\u6ca1\u6709\u9690\u79c1\u53ef\u8a00\uff0c\u4f46\u662f\u8fd8\u662f\u4fdd\u62a4\u4e00\u4e0b\u81ea\u5df1\uff0c\u4e0d\u8981\u518d\u7528\u90a3\u79cd\u5f31\u5bc6\u7801\u4e86\u3002</p></body></html>", None))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u5F88\u591A\u5C0F\u4F19\u4F34\u5E94\u8BE5\u90FD\u6709\u88AB\u76D7\u53F7\u7684\u7ECF\u5386\u5427\u3002</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u4E0D\u5F97\u4E0D\u8BF4\u6709\u4E9B\u9ED1\u5BA2\u786E\u5B9E\u975E\u5E38\u5389\u5BB3\uFF0C\u8F7B\u8F7B\u677E\u677E\u5C31\u80FD\u628A\u4F60\u7684\u8D26\u53F7\u76D7\u8D70\u3002</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u4E5F\u53EF\u80FD\u662F\u81EA\u5DF1\u8BBE\u7F6E\u7684\u5BC6\u7801\u5B9E\u5728\u592A\u7B80\u5355\u4E86\uFF0C\u6BD4\u5982123456\u8FD9\u79CD\u5BC6\u7801\u3002</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u8FD9\u79CD\u5BC6\u7801\u786E\u5B9E\u5F88\u5BB9\u6613\u8BB0\uFF0C\u4F46\u5B83\u5728\u5F88\u591A\u7206\u7834\u5B57\u5178\u4E2D\u90FD\u662F\u7B2C\u4E00\u4E2A\uFF0C\u4E5F\u5C31\u610F\u5473\u7740\u522B\u4EBA\u53EA\u8981\u4E00\u8BD5\u4FBF\u77E5\u9053\u4F60\u7684\u5BC6\u7801\u4E86\u3002</p>\n"
+                                                                      "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u5728\u8FD9\u8D8A\u6765\u8D8A\u900F\u660E\u7684\u4E16\u754C\u4E0A\uFF0C\u6211\u4EEC\u8FD8\u662F\u4FDD\u62A4\u4E00\u4E0B\u81EA\u5DF1\uFF0C\u4E0D\u8981\u518D\u7528\u90A3\u79CD\u5F31\u5BC6\u7801\u4E86\u3002</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u4E8E\u662F\u6211\u4EEC\u5F00\u53D1\u4E86\u8FD9\u6B3E\u5BC6\u7801\u7BA1\u7406\u5668\uFF0C\u65E8\u5728\u5E2E\u52A9\u5927\u5BB6\u66F4\u65B9\u4FBF\u5730\u7BA1\u7406\u81EA\u5DF1\u7684\u5BC6\u7801\uFF0C\u4E0D\u7528\u518D\u62C5\u5FC3\u8BB0\u4E0D\u4F4F\u4F17\u591A\u590D\u6742\u7684\u5BC6\u7801\u3002</p></body></html>", None))
         self.label_8.setText(QCoreApplication.translate("manage", u"\u4f7f\u7528\u58f0\u660e", None))
         self.textBrowser_2.setHtml(QCoreApplication.translate("manage", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
@@ -795,34 +791,27 @@ class Ui_manage(object):
 "hr { height: 1px; border-width: 0; }\n"
 "</style></head><body style=\" font-family:'\u5fae\u8f6f\u96c5\u9ed1'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u7a0b\u5e8f\u5728\u4f7f\u7528\u8fc7\u7a0b\u4e2d\u6240\u5b58\u50a8\u7684\u6570\u636e\u90fd\u5728\u672c\u5730\u6570\u636e\u5e93\u4e2d\uff0c\u8bf7\u52ff\u968f\u610f\u5c06\u79c1\u94a5\u4ee5\u53ca\u6570\u636e\u5e93\u6cc4\u9732</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u4e3a\u4e86\u4fdd\u8bc1\u6570\u636e\u5b89\u5168\uff0c\u8f6f\u4ef6\u4e0d\u4f1a\u8054\u7f51\u8bf7\u6c42\uff01\uff01\uff01\uff01"
-                        "\uff01\uff01</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u4e3a\u4e86\u4fdd\u8bc1\u6570\u636e\u5b89\u5168\uff0c\u8f6f\u4ef6\u4e0d\u4f1a\u8054\u7f51\u8bf7\u6c42\uff01\uff01\uff01\uff01\uff01\uff01</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u4e0d\u4f1a\u81ea\u52a8\u66f4\u65b0\u7b49\u7b49\u3002</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u6240\u6709\u4ee3\u7801\u5747\u5df2\u7ecf\u5f00\u6e90\uff0c\u53ef\u4ee5\u5171\u540c\u76d1\u7763\uff01</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u8f6f\u4ef6\u4e2d\u6700\u91cd\u8981\u7684\u6570\u636e\u90fd\u7ecf\u8fc7\u52a0\u5bc6\uff0c\u4f46\u662f\u5982\u679c\u6709\u79c1\u94a5\u5b58\u5728\u4e5f\u662f\u53ef\u4ee5\u89e3\u5bc6\u7684\uff0c\u6240\u4ee5\u4f7f\u7528\u8fc7\u7a0b\u4e2d\u8bf7\u59a5\u5584\u4fdd\u7ba1\u3002</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u8f6f\u4ef6\u4e2d\u6700\u91cd\u8981\u7684\u6570\u636e\u90fd\u7ecf\u8fc7\u52a0\u5bc6\uff0c\u4f46\u662f\u5982\u679c\u6709\u79c1\u94a5\u5b58\u5728\u4e5f\u662f\u53ef\u4ee5\u89e3\u5bc6\u7684\uff0c\u6240\u4ee5\u4f7f\u7528\u8fc7\u7a0b\u4e2d\u8bf7\u59a5\u5584\u4fdd\u7ba1\u3002</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-"
-                        "top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u5185\u7f6e\u968f\u673a\u5bc6\u7801\u751f\u6210\uff1a</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u5185\u7f6e\u968f\u673a\u5bc6\u7801\u751f\u6210\uff1a</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u5927\u5199\u5b57\u6bcd\uff1aA,B,C\u2026Z;</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u5c0f\u5199\u5b57\u6bcd\uff1aa,b,c\u2026z;</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u6570\u5b57\uff1a0,1,2\u20269;</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-inden"
-                        "t:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u7279\u6b8a\u7b26\u53f7\uff1a~,!,@,#,$,%,^;</span></p></body></html>", None))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u7279\u6b8a\u7b26\u53f7\uff1a~,!,@,#,$,%,^;</span></p></body></html>", None))
         self.label_11.setText(QCoreApplication.translate("manage", u"\u8f6f\u4ef6\u4f5c\u8005", None))
         self.textBrowser_3.setHtml(QCoreApplication.translate("manage", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "hr { height: 1px; border-width: 0; }\n"
 "</style></head><body style=\" font-family:'\u5fae\u8f6f\u96c5\u9ed1'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u6211\u6ca1\u4ec0\u4e48\u7ecf\u9a8c\uff0c\u53ef\u80fd\u7a0b\u5e8f\u4e5f\u8fd8\u5728\u5b58\u5728\u5f88\u591a\u95ee\u9898\uff0c\u5982\u679c\u5927\u5bb6\u6709\u4ec0\u4e48\u597d\u7684\u5efa\u8bae\u90fd\u53ef\u4ee5\u63d0\u51fa\u6765\uff0c\u6211\u5c3d\u91cf\u5b8c\u5584\u8f6f\u4ef6\uff0c\u5e76\u4e14\u5728\u6b64\u627f\u8bfa\uff1a\u8f6f\u4ef6\u6c38\u4e45\u514d\u8d39\u5f00\u6e90\u3002</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margi"
-                        "n-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u6211\u4EEC\u7ECF\u9A8C\u6709\u9650\uFF0C\u53EF\u80FD\u7A0B\u5E8F\u4E5F\u8FD8\u5728\u5B58\u5728\u5F88\u591A\u95EE\u9898\uFF0C\u5982\u679C\u5927\u5BB6\u6709\u4EC0\u4E48\u597D\u7684\u5EFA\u8BAE\uFF0C\u6B22\u8FCE\u8054\u7CFB\u6211\u4EEC\u63D0\u51FA\uFF0C\u6211\u4EEC\u4F1A\u5C3D\u91CF\u5B8C\u5584\u8F6F\u4EF6\u3002</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u8054\u7cfb\u4f5c\u8005\uff1a</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u5fae\u4fe1\u516c\u4f17\u53f7\uff1a<span style=\" color:#55ff00;\">\u767e\u6653\u6653</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u535a          \u5ba2\uff1a<span style=\" color:#00ffff;\">https://valley-ov.cn</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Q           Q\uff1a<span style=\" color:#ffaa00;\">1842360030</span></p>"
-                        "\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u5fae          \u4fe1\uff1a<span style=\" color:#00ffff;\">https://valley-ov.cn</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Q           Q\uff1a<span style=\" color:#ffaa00;\">1842360030</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u90ae          \u7bb1:   <span style=\" color:#aa55ff;\">valley-ov@qq.com</span></p></body></html>", None))
         self.status_info.setText("")
         self.state_time.setText("")
