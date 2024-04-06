@@ -136,6 +136,17 @@ class Ui_Insert(object):
 
         self.verticalLayout_2.addWidget(self.name)
 
+        self.url = QLineEdit(self.in_frame)
+        self.url.setObjectName(u"url")
+        self.url.setMinimumSize(QSize(300, 40))
+        self.url.setMaximumSize(QSize(300, 40))
+        self.url.setFont(font1)
+        self.url.setStyleSheet(u"")
+        self.url.setMaxLength(256)
+
+        self.verticalLayout_2.addWidget(self.url)
+
+        
         self.account = QLineEdit(self.in_frame)
         self.account.setObjectName(u"account")
         self.account.setMinimumSize(QSize(300, 40))
@@ -278,6 +289,13 @@ class Ui_Insert(object):
 #if QT_CONFIG(tooltip)
         self.account.setToolTip(QCoreApplication.translate("Insert", u"\u5fc5\u586b", None))
 #endif // QT_CONFIG(tooltip)
+
+# if QT_CONFIG(tooltip)
+        self.url.setToolTip(QCoreApplication.translate("Insert", u"\u5fc5\u586b", None))
+# endif // QT_CONFIG(tooltip)
+        self.url.setPlaceholderText(QCoreApplication.translate("Insert", u"\u8bf7\u8f93\u5165\u7f51\u5740", None))
+
+
         self.account.setPlaceholderText(QCoreApplication.translate("Insert", u"\u8bf7\u8f93\u5165\u8d26\u53f7", None))
 #if QT_CONFIG(tooltip)
         self.password.setToolTip(QCoreApplication.translate("Insert", u"\u5fc5\u586b\uff0c\u968f\u673a\u5bc6\u7801\u4f1a\u5305\u542b\u7279\u6b8a\u7b26\u53f7\uff0c\u5efa\u8bae\u4f7f\u7528", None))
