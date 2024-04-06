@@ -791,15 +791,14 @@ class Ui_manage(object):
 "hr { height: 1px; border-width: 0; }\n"
 "</style></head><body style=\" font-family:'\u5fae\u8f6f\u96c5\u9ed1'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u7a0b\u5e8f\u5728\u4f7f\u7528\u8fc7\u7a0b\u4e2d\u6240\u5b58\u50a8\u7684\u6570\u636e\u90fd\u5728\u672c\u5730\u6570\u636e\u5e93\u4e2d\uff0c\u8bf7\u52ff\u968f\u610f\u5c06\u79c1\u94a5\u4ee5\u53ca\u6570\u636e\u5e93\u6cc4\u9732</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u4e3a\u4e86\u4fdd\u8bc1\u6570\u636e\u5b89\u5168\uff0c\u8f6f\u4ef6\u4e0d\u4f1a\u8054\u7f51\u8bf7\u6c42\uff01\uff01\uff01\uff01\uff01\uff01</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> \u4e3a\u4e86\u4fdd\u8bc1\u6570\u636e\u5b89\u5168\uff0c\u8f6f\u4ef6\u4e0d\u4f1a\u8054\u7f51\u8bf7\u6c42\uff01\uff01\uff01\uff01\uff01\uff01</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u4e0d\u4f1a\u81ea\u52a8\u66f4\u65b0\u7b49\u7b49\u3002</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u8f6f\u4ef6\u4e2d\u6700\u91cd\u8981\u7684\u6570\u636e\u90fd\u7ecf\u8fc7\u52a0\u5bc6\uff0c\u4f46\u662f\u5982\u679c\u6709\u79c1\u94a5\u5b58\u5728\u4e5f\u662f\u53ef\u4ee5\u89e3\u5bc6\u7684\uff0c\u6240\u4ee5\u4f7f\u7528\u8fc7\u7a0b\u4e2d\u8bf7\u59a5\u5584\u4fdd\u7ba1\u3002</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    \u5185\u7f6e\u968f\u673a\u5bc6\u7801\u751f\u6210\uff1a</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> \u8f6f\u4ef6\u4e2d\u6700\u91cd\u8981\u7684\u6570\u636e\u90fd\u7ecf\u8fc7\u52a0\u5bc6\uff0c\u4f46\u662f\u5982\u679c\u6709\u79c1\u94a5\u5b58\u5728\u4e5f\u662f\u53ef\u4ee5\u89e3\u5bc6\u7684\uff0c\u6240\u4ee5\u4f7f\u7528\u8fc7\u7a0b\u4e2d\u8bf7\u59a5\u5584\u4fdd\u7ba1\u3002</p>\n""<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> \u5185\u7f6e\u968f\u673a\u5bc6\u7801\u751f\u6210\uff1a</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u5927\u5199\u5b57\u6bcd\uff1aA,B,C\u2026Z;</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u5c0f\u5199\u5b57\u6bcd\uff1aa,b,c\u2026z;</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u6570\u5b57\uff1a0,1,2\u20269;</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\">	\u7279\u6b8a\u7b26\u53f7\uff1a~,!,@,#,$,%,^;</span></p></body></html>", None))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'inherit'; font-size:16px; color:#55ff7f;\"> \u7279\u6b8a\u7b26\u53f7\uff1a~,!,@,#,$,%,^;</span></p></body></html>", None))
         self.label_11.setText(QCoreApplication.translate("manage", u"\u8f6f\u4ef6\u4f5c\u8005", None))
         self.textBrowser_3.setHtml(QCoreApplication.translate("manage", u"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
@@ -816,4 +815,3 @@ class Ui_manage(object):
         self.status_info.setText("")
         self.state_time.setText("")
     # retranslateUi
-

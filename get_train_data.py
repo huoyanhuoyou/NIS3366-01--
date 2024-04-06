@@ -1,5 +1,5 @@
 import cv2
-import os
+
 class FaceDataCollector:
     def __init__(self, cascade_path='haarcascade_frontalface_default.xml'):
         self.faceCascade = cv2.CascadeClassifier(cascade_path)
@@ -7,9 +7,6 @@ class FaceDataCollector:
         self.cap.set(3, 640)  # 设置宽度
         self.cap.set(4, 480)  # 设置高度
 
-    def create_directory(self, directory_name):
-        if not os.path.exists(directory_name):
-            os.makedirs(directory_name)
     def collect_face_data(self, username):
         print("\n [INFO]准备拍摄，请看着摄像头并等待 ...")
         count = 0  # 记录拍摄了的图像数量
@@ -18,8 +15,6 @@ class FaceDataCollector:
             ret, img = self.cap.read()
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)  # RGB转Gray图形
             faces = self.faceCascade.detectMultiScale(gray, 1.1, 5)
-
-            self.create_directory(f"train data")
 
             for (x, y, w, h) in faces:
                 cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)

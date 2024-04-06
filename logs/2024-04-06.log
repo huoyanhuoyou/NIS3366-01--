@@ -1,0 +1,28 @@
+04-06 16:53:02.879429 [INFO] configInit.py:50 | INFO
+04-06 16:53:02.880418 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-06 16:53:02.881417 [INFO] configInit.py:52 | 当前版本: 0.1.5
+04-06 16:53:02.882476 [INFO] configInit.py:53 | python: 3.11.7
+04-06 16:53:02.882476 [INFO] configInit.py:55 | 文件初始化成功
+04-06 16:53:11.036879 [INFO] login.py:41 | 开始初始化窗口
+04-06 16:53:11.041775 [INFO] login.py:48 | 窗口初始化完成
+04-06 16:53:51.111660 [INFO] login.py:188 | 注册成功
+04-06 16:54:48.484475 [INFO] configInit.py:50 | INFO
+04-06 16:54:48.485333 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-06 16:54:48.495707 [INFO] configInit.py:52 | 当前版本: 0.1.5
+04-06 16:54:48.496876 [INFO] configInit.py:53 | python: 3.11.7
+04-06 16:54:48.498876 [INFO] configInit.py:55 | 文件初始化成功
+04-06 16:54:48.925094 [INFO] login.py:41 | 开始初始化窗口
+04-06 16:54:48.928601 [INFO] login.py:48 | 窗口初始化完成
+04-06 16:54:58.114121 [INFO] login.py:188 | 注册成功
+04-06 16:56:40.990276 [INFO] configInit.py:50 | INFO
+04-06 16:56:40.991280 [INFO] configInit.py:51 | 鸣谢: duckweed
+04-06 16:56:40.991280 [INFO] configInit.py:52 | 当前版本: 0.1.5
+04-06 16:56:40.992844 [INFO] configInit.py:53 | python: 3.11.7
+04-06 16:56:40.992844 [INFO] configInit.py:55 | 文件初始化成功
+04-06 16:56:41.342269 [INFO] login.py:41 | 开始初始化窗口
+04-06 16:56:41.345275 [INFO] login.py:48 | 窗口初始化完成
+04-06 16:56:53.496562 [INFO] login.py:188 | 注册成功
+04-06 16:57:18.339086 [INFO] login.py:86 | 开始登录
+04-06 16:57:21.482714 [INFO] login.py:132 | 登录成功
+04-06 16:57:21.483715 [INFO] login.py:137 | 下次不自动登录
+04-06 16:57:21.514121 [INFO] login.py:145 | 登录成功

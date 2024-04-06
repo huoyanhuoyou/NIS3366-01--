@@ -1,6 +1,6 @@
+import time  # 导入时间模块
+import os
 import cv2
-import numpy as np
-
 
 class FaceRecognizer:
     def __init__(self, trainer_path="trainer/trainer.yml"):
@@ -8,6 +8,16 @@ class FaceRecognizer:
         self.recognizer.read(trainer_path)
         self.faceCascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
         self.font = cv2.FONT_HERSHEY_SIMPLEX
+        self.save_dir = "failed_logins"  # 保存失败登录照片的目录
+        if not os.path.exists(self.save_dir):
+            os.makedirs(self.save_dir)
+
+        self.cooldown_time = 5  # 冷却时间为60秒
+        self.last_failed_login_time = 0  # 上次失败登录时间初始化为0
+
+    def save_failed_login_image(self, image):
+        img_name = f"failed_login_{len(os.listdir(self.save_dir)) + 1}.jpg"
+        cv2.imwrite(os.path.join(self.save_dir, img_name), image)
 
     def recognize_faces(self, username):
         cam = cv2.VideoCapture(0)
@@ -27,22 +37,31 @@ class FaceRecognizer:
             )
 
             for (x, y, w, h) in faces:
-                id, confidence = self.recognizer.predict(gray[y:y+h, x:x+w])
-                # 匹配用户名与识别到的 ID
+                id, confidence = self.recognizer.predict(gray[y:y + h, x:x + w])
+
+                # 优先使用用户名进行识别
                 if username == str(id) and confidence > 50:
                     # 允许通过
-                    cv2.putText(img, f"Welcome, {username}!", (x, y-20), self.font, 1, (0, 255, 0), 2)
+                    cv2.putText(img, f"Welcome, {username}!", (x, y - 20), self.font, 1, (0, 255, 0), 2)
                     cam.release()
                     cv2.destroyAllWindows()
                     print("您的身份已核实：", id)
                     return True
                 else:
-                    # 输出错误
-                    cv2.putText(img, "Access Denied!", (x, y-20), self.font, 1, (0, 0, 255), 2)
+                    # 检查冷却时间是否已过
+                    current_time = time.time()
+                    if current_time - self.last_failed_login_time >= self.cooldown_time:
+                        # 保存失败登录照片
+                        self.save_failed_login_image(img)
+                        self.last_failed_login_time = current_time  # 更新上次失败登录时间
+
+                        # 输出错误
+                        cv2.putText(img, "Access Denied!", (x, y - 20), self.font, 1, (0, 0, 255), 2)
 
                 # 显示识别信息
-                cv2.putText(img, f"ID: {id}", (x+5, y-5), self.font, 1, (255, 255, 0), 2)
-                cv2.putText(img, f"Confidence: {round(100 - confidence)}%", (x+5, y+h-5), self.font, 1, (255, 255, 0), 2)
+                cv2.putText(img, f"ID: {id}", (x + 5, y - 5), self.font, 1, (255, 255, 0), 2)
+                cv2.putText(img, f"Confidence: {round(100 - confidence)}%", (x + 5, y + h - 5), self.font, 1,
+                            (255, 255, 0), 2)
 
             cv2.imshow('FaceRecognition', img)
 
@@ -53,6 +72,7 @@ class FaceRecognizer:
         cam.release()
         cv2.destroyAllWindows()
         return False
+
 
 # 使用示例
 if __name__ == "__main__":

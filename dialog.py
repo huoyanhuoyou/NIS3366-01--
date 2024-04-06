@@ -57,6 +57,8 @@ class MouseDialog(QDialog):
 class InsertDialog(MouseDialog):
 
     def __init__(self, parent=None):
+        self.checkbox_list = []  # 搜索列表中的多选按钮
+        self.selected_list = []  # 选择结果
         super(InsertDialog, self).__init__()
         self.parent = parent
         self.ui = Ui_Insert()
@@ -69,12 +71,44 @@ class InsertDialog(MouseDialog):
     def bind(self):
         # 生成随机密码
         self.ui.random_password.clicked.connect(self.create_password)
+        self.ui.copy_id.clicked.connect(self.copy_all)
+
         # 提交数据
         self.ui.add_btn.clicked.connect(self.addDate)
 
+    def copy_all(self):
+        option_id = self.ui.option_id.text()
+        password = PasswordMemoModel.select().where(PasswordMemoModel.id == int(option_id))
+
+        Pwd = password[0]
+        Password = Pwd.password
+        key = Pwd.key
+        enc = Encryption()
+        logger.debug(GlobalConfig.file_path.private_key)
+        ret = enc.textDecrypt(Password, private=GlobalConfig.file_path.private_key, key=key)
+        if ret.get('code') != 200:
+            logger.critical(f'数据加密失败 {ret.get("error")}')
+            self.parent.statusInfo.emit(f'数据加密失败 {ret.get("error")}')
+            return
+        pwd = ret.get('data')
+
+        self.ui.name.setText(password[0].name)
+        self.ui.account.setText(password[0].account)
+        self.ui.password.setText(pwd)
+        self.ui.remark.setText(password[0].remark)
+
     def create_password(self):
         chars = 'ABCDEFGHIGKLMNOPQRSTUVWXYZabcdefghigklmnopqrstuvwxyz0123456789~!@#$%^'
-        pwd = ''.join(random.choice(chars) for _ in range(random.randint(6, 16)))
+        range_num_min = self.ui.range_num_min.text()
+        range_num_max = self.ui.range_num_max.text()
+        must_str = self.ui.must_str.text()
+        if range_num_min == "":
+            pwd = ''.join(random.choice(chars) for _ in range(random.randint(6 - len(must_str), 16 - len(must_str))))
+        else:
+            pwd = ''.join(random.choice(chars) for _ in
+                          range(random.randint(int(range_num_min) - len(must_str), int(range_num_max) - len(must_str))))
+        insert_index = random.randint(0, len(pwd))
+        pwd = pwd[:insert_index] + must_str + pwd[insert_index:]
         logger.debug(f'生成随机密码{pwd}')
         self.ui.password.setText(pwd)
 

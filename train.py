@@ -23,14 +23,10 @@ class FaceRecognize_trainer:
                 ids.append(id)
         return face_samples, ids
 
-    def create_directory(self, directory_name):
-        if not os.path.exists(directory_name):
-            os.makedirs(directory_name)
     def train(self):
         print("\n [INFO] 正在训练模型 ...")
         faces, ids = self.get_images_and_labels()
         self.recognizer.train(faces, np.array(ids))  # 训练
-        self.create_directory("trainer")
         self.recognizer.write('trainer/trainer.yml')  # 保存模型到 trainer.yml
         print("\n [INFO] {0} 成功训练，正在退出程序".format(len(np.unique(ids))))
 

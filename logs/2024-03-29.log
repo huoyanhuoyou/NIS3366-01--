@@ -1,0 +1,8 @@
+03-29 18:30:50.867326 [INFO] configInit.py:50 | INFO
+03-29 18:30:50.868829 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-29 18:30:50.869841 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-29 18:30:50.870834 [INFO] configInit.py:53 | python: 3.11.7
+03-29 18:30:50.871834 [INFO] configInit.py:55 | 文件初始化成功
+03-29 18:30:51.669007 [INFO] login.py:41 | 开始初始化窗口
+03-29 18:30:51.673010 [INFO] login.py:48 | 窗口初始化完成
+03-29 18:30:51.711719 [INFO] login.py:67 | 解密成功，自动填写密码

@@ -18,6 +18,7 @@ from Global.GlobalConfig import logger
 from Global.GlobalConfig import GlobalConfig
 
 from Gui.main_uic import Ui_manage
+from Gui.pay_uic import Ui_Form as Pay_Ui
 from dialog import InsertDialog, ConfirmDialog
 
 from utils.baseObject import MouseEvent
@@ -29,14 +30,14 @@ from utils.file import readQss
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("myappid")
 
 
-# class PayWindow(QWidget):
-#
-#     def __init__(self):
-#         super(PayWindow, self).__init__()
-#         self.ui = Pay_Ui()
-#         self.ui.setupUi(self)
-#         flags = self.windowFlags()
-#         self.setWindowFlags(flags | Qt.WindowStaysOnTopHint)
+#class PayWindow(QWidget):
+
+#    def __init__(self):
+#        super(PayWindow, self).__init__()
+#        self.ui = Pay_Ui()
+#        self.ui.setupUi(self)
+#        flags = self.windowFlags()
+#        self.setWindowFlags(flags | Qt.WindowStaysOnTopHint)
 
 
 class MainWindow(MouseEvent):
@@ -205,7 +206,7 @@ class MainWindow(MouseEvent):
         self.initTable()
         self.init_setting()
         # 定时任务
-        # self.timedTasks()
+        #self.timedTasks()
 
     def initTable(self):
         tab = self.ui.tableWidget
@@ -215,17 +216,17 @@ class MainWindow(MouseEvent):
         tab.setSelectionBehavior(QAbstractItemView.SelectRows)  # 设置整行选中
         tab.setColumnWidth(0, 30)
 
-    # def timedTasks(self):
-    #     """定时任务"""
-    #     # 任务一展示时间
-    #     timer = QTimer(self)
-    #     timer.timeout.connect(self.showtime)
-    #     timer.start(1000 * 60)
-    #     # 展示捐赠页面
-    #     QTimer.singleShot(1000 * 60 * 5, self.payShow)
-    #
-    # def payShow(self):
-    #     self.pay.show()
+    #def timedTasks(self):
+    #    """定时任务"""
+    #    # 任务一展示时间
+    #    timer = QTimer(self)
+    #    timer.timeout.connect(self.showtime)
+    #    timer.start(1000 * 60)
+    #    # 展示捐赠页面
+    #    QTimer.singleShot(1000 * 60 * 5, self.payShow)
+
+    def payShow(self):
+        self.pay.show()
 
     def showtime(self):
         """展示当前时间"""
@@ -354,7 +355,7 @@ class MainWindow(MouseEvent):
 
             d_list = [QTableWidgetItem(item.name), QTableWidgetItem(item.account),
                       QTableWidgetItem(item.password), QTableWidgetItem(item.remark),
-                      QTableWidgetItem(str(item.add_time).split('.')[0]), QTableWidgetItem(item.password_strength)]
+                      QTableWidgetItem(str(item.add_time).split('.')[0]),QTableWidgetItem(item.password_strength)]
             for it in range(len(d_list)):
                 table.setItem(RowCont, it + 1, d_list[it])
                 table.item(RowCont, it + 1).setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)

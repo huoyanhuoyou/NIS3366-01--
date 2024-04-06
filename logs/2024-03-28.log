@@ -1,0 +1,164 @@
+03-28 08:24:16.866075 [INFO] configInit.py:50 | INFO
+03-28 08:24:16.867075 [INFO] configInit.py:51 | 作者: duckweed
+03-28 08:24:16.868073 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 08:24:16.869074 [INFO] configInit.py:53 | python: 3.11.7
+03-28 08:24:16.870075 [INFO] configInit.py:55 | 文件初始化成功
+03-28 08:24:20.835897 [INFO] login.py:37 | 开始初始化窗口
+03-28 08:24:20.838896 [INFO] login.py:44 | 窗口初始化完成
+03-28 08:24:21.207141 [INFO] login.py:63 | 解密成功，自动填写密码
+03-28 08:24:25.326867 [INFO] login.py:82 | 开始登录
+03-28 08:24:25.344711 [INFO] login.py:116 | 登录成功
+03-28 08:24:25.345618 [INFO] login.py:118 | 下次自动登录
+03-28 08:24:25.347616 [INFO] login.py:148 | 加密成功
+03-28 08:24:25.422880 [INFO] login.py:129 | 登录成功
+03-28 08:27:52.327043 [INFO] configInit.py:50 | INFO
+03-28 08:27:52.328043 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 08:27:52.329044 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 08:27:52.329044 [INFO] configInit.py:53 | python: 3.11.7
+03-28 08:27:52.329044 [INFO] configInit.py:55 | 文件初始化成功
+03-28 08:27:52.643257 [INFO] login.py:37 | 开始初始化窗口
+03-28 08:27:52.646854 [INFO] login.py:44 | 窗口初始化完成
+03-28 08:27:52.679545 [INFO] login.py:63 | 解密成功，自动填写密码
+03-28 08:40:30.565160 [INFO] configInit.py:50 | INFO
+03-28 08:40:30.566171 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 08:40:30.567171 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 08:40:30.567171 [INFO] configInit.py:53 | python: 3.11.7
+03-28 08:40:30.568170 [INFO] configInit.py:55 | 文件初始化成功
+03-28 08:40:32.072547 [INFO] login.py:41 | 开始初始化窗口
+03-28 08:40:32.076158 [INFO] login.py:48 | 窗口初始化完成
+03-28 08:40:32.108255 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 08:40:54.678595 [INFO] login.py:174 | 注册成功
+03-28 08:43:08.456142 [INFO] login.py:174 | 注册成功
+03-28 08:43:33.866866 [INFO] configInit.py:50 | INFO
+03-28 08:43:33.867866 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 08:43:33.867866 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 08:43:33.868866 [INFO] configInit.py:53 | python: 3.11.7
+03-28 08:43:33.869866 [INFO] configInit.py:55 | 文件初始化成功
+03-28 08:43:34.214490 [INFO] login.py:41 | 开始初始化窗口
+03-28 08:43:34.217033 [INFO] login.py:48 | 窗口初始化完成
+03-28 08:43:34.249268 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 08:43:44.746575 [INFO] login.py:174 | 注册成功
+03-28 08:55:05.492336 [INFO] configInit.py:50 | INFO
+03-28 08:55:05.493337 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 08:55:05.494336 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 08:55:05.494336 [INFO] configInit.py:53 | python: 3.11.7
+03-28 08:55:05.494336 [INFO] configInit.py:55 | 文件初始化成功
+03-28 08:55:05.939622 [INFO] login.py:41 | 开始初始化窗口
+03-28 08:55:05.942624 [INFO] login.py:48 | 窗口初始化完成
+03-28 08:55:05.975716 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 08:55:17.135608 [INFO] login.py:174 | 注册成功
+03-28 09:36:29.679808 [INFO] configInit.py:50 | INFO
+03-28 09:36:29.680808 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 09:36:29.680808 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 09:36:29.681808 [INFO] configInit.py:53 | python: 3.11.7
+03-28 09:36:29.681808 [INFO] configInit.py:55 | 文件初始化成功
+03-28 09:36:30.069946 [INFO] login.py:41 | 开始初始化窗口
+03-28 09:36:30.073948 [INFO] login.py:48 | 窗口初始化完成
+03-28 09:36:30.105064 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 09:36:38.726443 [INFO] login.py:86 | 开始登录
+03-28 09:37:33.298650 [INFO] configInit.py:50 | INFO
+03-28 09:37:33.298650 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 09:37:33.299650 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 09:37:33.299650 [INFO] configInit.py:53 | python: 3.11.7
+03-28 09:37:33.300650 [INFO] configInit.py:55 | 文件初始化成功
+03-28 09:37:33.614434 [INFO] login.py:41 | 开始初始化窗口
+03-28 09:37:33.617208 [INFO] login.py:48 | 窗口初始化完成
+03-28 09:37:33.649676 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 09:37:54.408890 [INFO] login.py:202 | 注册成功
+03-28 09:38:11.296649 [INFO] login.py:86 | 开始登录
+03-28 10:06:19.720036 [INFO] configInit.py:50 | INFO
+03-28 10:06:19.721039 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 10:06:19.721039 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 10:06:19.722038 [INFO] configInit.py:53 | python: 3.11.7
+03-28 10:06:19.723039 [INFO] configInit.py:55 | 文件初始化成功
+03-28 10:06:20.340118 [INFO] login.py:41 | 开始初始化窗口
+03-28 10:06:20.345606 [INFO] login.py:48 | 窗口初始化完成
+03-28 10:06:20.381642 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 10:06:43.012033 [INFO] login.py:202 | 注册成功
+03-28 10:10:40.729133 [INFO] configInit.py:50 | INFO
+03-28 10:10:40.730133 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 10:10:40.730636 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 10:10:40.730636 [INFO] configInit.py:53 | python: 3.11.7
+03-28 10:10:40.731742 [INFO] configInit.py:55 | 文件初始化成功
+03-28 10:10:41.053127 [INFO] login.py:41 | 开始初始化窗口
+03-28 10:10:41.056075 [INFO] login.py:48 | 窗口初始化完成
+03-28 10:10:41.088720 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 10:10:50.597585 [INFO] login.py:202 | 注册成功
+03-28 10:11:22.276995 [INFO] login.py:86 | 开始登录
+03-28 11:18:45.819116 [INFO] configInit.py:50 | INFO
+03-28 11:18:45.821118 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 11:18:45.822119 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 11:18:45.823118 [INFO] configInit.py:53 | python: 3.11.7
+03-28 11:18:45.823118 [INFO] configInit.py:55 | 文件初始化成功
+03-28 11:18:46.145401 [INFO] login.py:41 | 开始初始化窗口
+03-28 11:18:46.148053 [INFO] login.py:48 | 窗口初始化完成
+03-28 11:18:46.180536 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 11:18:50.946667 [INFO] login.py:86 | 开始登录
+03-28 11:18:53.902106 [INFO] login.py:132 | 登录成功
+03-28 11:18:53.904105 [INFO] login.py:134 | 下次自动登录
+03-28 11:18:53.905105 [INFO] login.py:166 | 加密成功
+03-28 11:18:53.950321 [INFO] login.py:145 | 登录成功
+03-28 11:26:00.558027 [INFO] configInit.py:50 | INFO
+03-28 11:26:00.559382 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 11:26:00.560387 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 11:26:00.560387 [INFO] configInit.py:53 | python: 3.11.7
+03-28 11:26:00.561387 [INFO] configInit.py:55 | 文件初始化成功
+03-28 11:26:00.908156 [INFO] login.py:41 | 开始初始化窗口
+03-28 11:26:00.911126 [INFO] login.py:48 | 窗口初始化完成
+03-28 11:26:00.942886 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 11:26:05.258312 [INFO] login.py:86 | 开始登录
+03-28 11:26:17.036740 [INFO] login.py:132 | 登录成功
+03-28 11:26:17.036740 [INFO] login.py:134 | 下次自动登录
+03-28 11:26:17.039249 [INFO] login.py:166 | 加密成功
+03-28 11:26:17.098151 [INFO] login.py:145 | 登录成功
+03-28 17:25:10.651991 [INFO] configInit.py:50 | INFO
+03-28 17:25:10.653990 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 17:25:10.654991 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 17:25:10.655990 [INFO] configInit.py:53 | python: 3.11.7
+03-28 17:25:10.657991 [INFO] configInit.py:55 | 文件初始化成功
+03-28 17:25:12.137585 [INFO] login.py:41 | 开始初始化窗口
+03-28 17:25:12.144102 [INFO] login.py:48 | 窗口初始化完成
+03-28 17:25:12.217271 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 17:27:10.345392 [INFO] login.py:188 | 注册成功
+03-28 17:27:47.487905 [INFO] login.py:86 | 开始登录
+03-28 17:27:58.710862 [INFO] login.py:132 | 登录成功
+03-28 17:27:58.712871 [INFO] login.py:134 | 下次自动登录
+03-28 17:27:58.716869 [INFO] login.py:166 | 加密成功
+03-28 17:27:58.851247 [INFO] login.py:145 | 登录成功
+03-28 18:36:29.592992 [INFO] configInit.py:50 | INFO
+03-28 18:36:29.594990 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 18:36:29.594990 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 18:36:29.595990 [INFO] configInit.py:53 | python: 3.11.7
+03-28 18:36:29.595990 [INFO] configInit.py:55 | 文件初始化成功
+03-28 18:36:30.407917 [INFO] login.py:41 | 开始初始化窗口
+03-28 18:36:30.412441 [INFO] login.py:48 | 窗口初始化完成
+03-28 18:36:30.453091 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 18:36:50.696743 [INFO] login.py:86 | 开始登录
+03-28 18:37:27.099598 [WARNING] login.py:105 | 人脸识别失败！
+03-28 18:37:33.920536 [INFO] configInit.py:50 | INFO
+03-28 18:37:33.921535 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 18:37:33.921535 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 18:37:33.922535 [INFO] configInit.py:53 | python: 3.11.7
+03-28 18:37:33.923537 [INFO] configInit.py:55 | 文件初始化成功
+03-28 18:37:34.271931 [INFO] login.py:41 | 开始初始化窗口
+03-28 18:37:34.274927 [INFO] login.py:48 | 窗口初始化完成
+03-28 18:37:34.308640 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 18:37:39.179346 [INFO] login.py:86 | 开始登录
+03-28 18:37:49.611695 [INFO] login.py:132 | 登录成功
+03-28 18:37:49.612696 [INFO] login.py:134 | 下次自动登录
+03-28 18:37:49.614696 [INFO] login.py:166 | 加密成功
+03-28 18:37:49.671791 [INFO] login.py:145 | 登录成功
+03-28 20:40:15.079932 [INFO] configInit.py:50 | INFO
+03-28 20:40:15.080932 [INFO] configInit.py:51 | 鸣谢: duckweed
+03-28 20:40:15.081932 [INFO] configInit.py:52 | 当前版本: 0.1.0
+03-28 20:40:15.082932 [INFO] configInit.py:53 | python: 3.11.7
+03-28 20:40:15.083932 [INFO] configInit.py:55 | 文件初始化成功
+03-28 20:40:16.436127 [INFO] login.py:41 | 开始初始化窗口
+03-28 20:40:16.443140 [INFO] login.py:48 | 窗口初始化完成
+03-28 20:40:16.496378 [INFO] login.py:67 | 解密成功，自动填写密码
+03-28 20:40:50.712462 [INFO] login.py:188 | 注册成功
+03-28 20:41:49.973523 [INFO] login.py:86 | 开始登录
+03-28 20:41:52.584135 [INFO] login.py:132 | 登录成功
+03-28 20:41:52.585136 [INFO] login.py:134 | 下次自动登录
+03-28 20:41:52.587392 [INFO] login.py:166 | 加密成功
+03-28 20:41:52.722039 [INFO] login.py:145 | 登录成功
