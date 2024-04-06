@@ -33,5 +33,5 @@ class FaceRecognize_trainer:
 # 使用示例
 if __name__ == "__main__":
     # 假设你的训练图片存放在"train data"目录下
-    face_recognizer = FaceRecognizer("train data")
+    face_recognizer = FaceRecognize_trainer("train data")
     face_recognizer.train()

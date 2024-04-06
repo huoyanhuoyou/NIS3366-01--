@@ -114,6 +114,7 @@ class InsertDialog(MouseDialog):
 
     def addDate(self):
         name = self.ui.name.text()
+        url = self.ui.url.text()
         account = self.ui.account.text()
         password = self.ui.password.text()
         remark = self.ui.remark.text()
@@ -144,8 +145,8 @@ class InsertDialog(MouseDialog):
         password_strength = self.assess_password_strength(password)
 
         user_id = GlobalConfig.user.id
-        PasswordMemoModel.create(user=user_id, name=name, url=url,account=account, password=pwd,
-                                 remark=remark, key=key)
+        PasswordMemoModel.create(user=user_id, name=name, url=url, account=account, password=pwd,
+                                 remark=remark, key=key, password_strength=password_strength)
         logger.debug(f'{name} {url} {account} {password} {remark}')
         QMessageBox.information(self, '添加成功', f'{name} 已经添加到数据库！')
         if self.parent:
